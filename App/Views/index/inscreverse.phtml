@@ -16,17 +16,21 @@
         <div class="row">
           <div class="col">
             
-            <form action="" method="post">
+            <form action="/registrar" method="post">
+              <?php
+                if($this->view->erroCadastro){ ?>
+                  <small class="form-text tex-danger">Erro ao tentar realizar o cadastro, verifique se os campos foram preenchidos corretamente.</small>
+              <?php } ?>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Nome">
+                <input type="text" class="form-control" placeholder="Nome" name="nome" value="<?= $this->view->usuario['nome'] ?>">
               </div>
               
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="E-mail">
+                <input type="text" class="form-control" placeholder="E-mail" name="email" value="<?= $this->view->usuario['email'] ?>">
               </div>
 
               <div class="form-group">
-                <input type="password" class="form-control" placeholder="Senha">
+                <input type="password" class="form-control" placeholder="Senha" name="senha" value="<?= $this->view->usuario['senha'] ?>">
               </div>
               
               <div class="mt-4 mb-4">
