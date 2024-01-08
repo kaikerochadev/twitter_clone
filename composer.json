@@ -1,12 +1,12 @@
 {
-	"name": "miniframework",
+	"name": "twitter/clone",
 	"require": {
 		"php": ">= 7.0"
 	},
 	"authors": [
 		{
-			"name": "Jorge Sant Ana",
-			"email": "jorge@teste.com.br"
+			"name": "Kaike da Conceição Rocha",
+			"email": "kaikerochadev@gmail.com"
 		}
 	],
 	"autoload": {
