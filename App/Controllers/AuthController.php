@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-//os recursos do miniframework
+//os recursos do twitter/clone
 use MF\Controller\Action;
 use MF\Model\Container;
 
